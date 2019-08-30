@@ -21,3 +21,18 @@ ul {
   margin: 0;
   list-style: none;
 }
+
+
+
+::-webkit-input-placeholder {
+  color: #888888;
+}
+:-moz-placeholder {/* Firefox 18- */
+  color: #888888;
+}
+::-moz-placeholder{/* Firefox 19+ */
+ color: #888888;
+}
+:-ms-input-placeholder {
+  color: #888888;
+}

@@ -4,7 +4,8 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: '电竞资源导航',
+    // title: process.env.npm_package_name || '电竞资源导航',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -28,6 +29,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   // plugins: ['@/plugins/antd-ui'],
+  plugins: ['@/plugins/element-ui'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -64,6 +66,14 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    },
+    babel: {
+      plugins: [
+        [
+          'component',
+          { libraryName: 'element-ui', styleLibraryName: 'theme-chalk' }
+        ]
+      ]
     }
   }
 }
